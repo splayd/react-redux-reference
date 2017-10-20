@@ -1,13 +1,17 @@
 {
   "license": "MIT",
   "scripts": {
-    "test": "standard -v --fix && ava"
+    "postinstall": "flow-typed update --skip",
+    "test": "standard -v --fix && flow && ava"
   },
   "devDependencies": {
     "ava": "^0.22.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
+    "flow-bin": "^0.57.3",
+    "flow-typed": "^2.2.0",
     "standard-esnext": "^4.0.1"
   },
   "ava": {
@@ -26,7 +30,8 @@
           }
         }
       ],
-      "stage-0"
+      "stage-0",
+      "flow"
     ]
   }
 }
