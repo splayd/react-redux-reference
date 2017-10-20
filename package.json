@@ -1,13 +1,14 @@
 {
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "test": "standard -v --fix && ava"
   },
   "devDependencies": {
     "ava": "^0.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "standard-esnext": "^4.0.1"
   },
   "ava": {
     "babel": "inherit",
