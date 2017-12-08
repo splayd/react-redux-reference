@@ -8,17 +8,26 @@
   "dependencies": {
     "get-port": "^3.2.0",
     "json-server": "^0.12.1",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^1.7.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "ava": "^0.24.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "flow-bin": "^0.60.1",
     "flow-typed": "^2.2.3",
-    "standard-esnext": "^4.0.1"
+    "jsdom": "^11.5.1",
+    "standard-esnext": "^4.0.3"
   },
   "ava": {
     "babel": "inherit",
@@ -37,7 +46,8 @@
         }
       ],
       "stage-0",
-      "flow"
+      "flow",
+      "react"
     ]
   }
 }
