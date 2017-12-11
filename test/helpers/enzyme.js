@@ -12,6 +12,9 @@ const { window } = new JSDOM(`
 
 global.window = window
 for (const property of Reflect.ownKeys(window)) {
+  if (property in global) {
+    continue
+  }
   Reflect.defineProperty(
     global,
     property,
